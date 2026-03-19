@@ -13,6 +13,22 @@ describe("Testes da calculadora", () => {
         test("Soma dois números inteiros negativos", () => {
             expect(soma(-2, -3)).toBe(-5);
         });
+
+        test("Soma um número positivo com zero", () => {
+            expect(soma(2, 0)).toBe(2);
+        });
+
+        test("Soma um número negativo com zero", () => {
+            expect(soma(-2, 0)).toBe(-2);
+        });
+
+        test("Soma zero com um número positivo", () => {
+            expect(soma(0, 2)).toBe(2);
+        });
+
+        test("Soma zero com um número negativo", () => {
+            expect(soma(0, -2)).toBe(-2);
+        });
     
         test("Soma dois números decimais positivos", () => {
             expect(soma(0.25, 0.25)).toBe(0.5);
@@ -30,6 +46,22 @@ describe("Testes da calculadora", () => {
         
         test("Subtrai dois números inteiros negativos", () => {
             expect(subtracao(-2, -3)).toBe(1);
+        });
+
+        test("Subtrai zero por um número positivo", () => {
+            expect(subtracao(0, 2)).toBe(-2);
+        });
+
+        test("Subtrai zero por um número negativo", () => {
+            expect(subtracao(0, -2)).toBe(2);
+        });
+
+        test("Subtrai um número positivo por zero", () => {
+            expect(subtracao(2, 0)).toBe(2);
+        });
+
+        test('Subtrai um número negativo por zero', () => {
+            expect(subtracao(-2, 0)).toBe(-2);
         });
     
         test("Subtrai dois números decimais positivos", () => {

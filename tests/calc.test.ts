@@ -1,7 +1,7 @@
-import { soma } from "../src/soma";
-import { subtracao } from "../src/subtracao";
-import { multiplicacao } from "../src/multiplicacao";
-import { divisao } from "../src/divisao";
+import { soma } from "../src/calc/soma";
+import { subtracao } from "../src/calc/subtracao";
+import { multiplicacao } from "../src/calc/multiplicacao";
+import { divisao } from "../src/calc/divisao";
 
 
 describe("Testes da calculadora", () => {

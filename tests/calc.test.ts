@@ -82,8 +82,12 @@ describe("Testes da calculadora", () => {
             expect(divisao(-10, -5)).toBe(2);
         });
 
-        test("Lança erro ao dividir por zero", () => {
+        test("Divide um número qualquer por zero, lançando um erro", () => {
             expect(() => divisao(10, 0)).toThrow("Divisão por zero");
+        });
+
+        test("Divide zero por um número qualquer", () => {
+            expect(divisao(0, 2)).toBe(0);
         });
 
         test("Divide dois números decimais positivos", () => {
@@ -104,8 +108,12 @@ describe("Testes da calculadora", () => {
             expect(multiplicacao(-10, -10)).toBe(100);
         });
 
-        test("Multiplica um número por 0", () => {
+        test("Multiplica um número qualquer por zero", () => {
             expect(multiplicacao(10, 0)).toBe(0);
+        });
+
+        test("Multiplica zero por um número qualquer", () => {
+            expect(multiplicacao(0, 10)).toBe(0);
         });
 
         test("Multiplica dois números decimais positivos", () => {

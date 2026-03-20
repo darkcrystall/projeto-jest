@@ -8,9 +8,7 @@ export function temNumero(senha: string): boolean {
       if (caractere === numero) {
         temNumero = true;
         return temNumero;
-      } else {
-        temNumero = false;
-      }
+      } 
     }
   }
   return temNumero;
